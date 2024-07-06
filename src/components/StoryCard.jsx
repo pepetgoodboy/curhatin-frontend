@@ -24,7 +24,7 @@ export default function StoryCard({ story, onCommentAdded }) {
       }
     } catch (error) {
       Swal.fire({
-        icon: "error",
+        icon: "warning",
         title: error.response.data.message || "Anda sudah menyukai cerita ini",
         confirmButtonColor: "#87e1a0",
         focusConfirm: true,
