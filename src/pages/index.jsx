@@ -12,6 +12,8 @@ import Swal from "sweetalert2";
 
 const STORIES_PER_PAGE = 5;
 
+const url = process.env.NEXT_PUBLIC_API_URL;
+
 export default function Home() {
   const [stories, setStories] = useState([]);
   const [visibleStories, setVisibleStories] = useState([]);
