@@ -1,0 +1,16 @@
+services:
+  curhatin-frontend:
+    container_name: curhatin-frontend
+    build: .
+    image: curhatin-frontend:1.0.0
+    ports:
+      - "3002:3002"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - main-network
+
+networks:
+  main-network:
+    external: true
